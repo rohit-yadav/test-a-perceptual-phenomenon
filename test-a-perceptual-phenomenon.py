@@ -15,3 +15,9 @@ import scipy.stats as stats
 
 get_ipython().run_line_magic('matplotlib', 'inline')
 
+
+# In[2]:
+
+
+df = pd.read_csv('stroopdata.csv')
+
