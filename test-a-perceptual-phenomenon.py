@@ -78,3 +78,50 @@ plt.show()
 plt.boxplot(df['Congruent'])
 plt.show()
 
+
+# The boxplot made more sense than the distribution plot. From the boxplot we can see that the median line is almost in the middle which means the data is not skewed.
+
+# # **t-test**
+
+# As there are two condition - congruent and incongruent we will consider Paired T test. We will consider a two tailed test as we will look for a deviation in both ways, if any. We assume that the 2nd test result can go either way.
+
+# In[12]:
+
+
+# Getting data for the test
+
+# Sample size
+n = df['Congruent'].count()
+
+# Degree of freedom
+degree_of_freedom = n - 1
+
+
+# In[13]:
+
+
+# Two tailed test with aplha (α) = 0.05
+# t critical value
+stats.t.ppf(1 - 0.025, degree_of_freedom)
+
+
+# In[14]:
+
+
+# Statistical test here - paired t-test
+stats.ttest_rel(df['Congruent'], df['Incongruent'])
+
+
+# In[15]:
+
+
+# Confidence Interval = 0.95
+ci = 0.95
+stats.t.interval(ci,degree_of_freedom)
+
+
+# * sample size n = 24
+# * degree of freedom df = n-1, i.e. 23
+# * t-critical value using the t-table = 2.069
+# * t-statistic = -8.02 and pvalue is close to 0.0001
+# * Confidence interval is (-2.07, 2.07)
