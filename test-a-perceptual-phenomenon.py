@@ -21,3 +21,15 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 df = pd.read_csv('stroopdata.csv')
 
+
+# In[5]:
+
+
+df.head()
+
+
+# In[ ]:
+
+
+df.describe
+
