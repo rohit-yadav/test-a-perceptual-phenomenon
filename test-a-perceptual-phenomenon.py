@@ -125,3 +125,7 @@ stats.t.interval(ci,degree_of_freedom)
 # * t-critical value using the t-table = 2.069
 # * t-statistic = -8.02 and pvalue is close to 0.0001
 # * Confidence interval is (-2.07, 2.07)
+
+# ## Decision
+# 
+# The pvalue is less than the α so we reject the null hypothesis. This tells that the average time taken by a person when the test condition is changed from congruent to incongruent will vary. The result didn't match up my expectation as I thought there will hardly be an effect on the time.
