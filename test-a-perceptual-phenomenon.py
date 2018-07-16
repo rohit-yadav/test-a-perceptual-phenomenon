@@ -129,3 +129,16 @@ stats.t.interval(ci,degree_of_freedom)
 # ## Decision
 # 
 # The pvalue is less than the α so we reject the null hypothesis. This tells that the average time taken by a person when the test condition is changed from congruent to incongruent will vary. The result didn't match up my expectation as I thought there will hardly be an effect on the time.
+
+# ## Reference
+# 
+# * For Paired t-test refer [here](http://www.statisticshowto.com/probability-and-statistics/t-test/).
+# 
+# * Descriptive Statistics from [Udacity](https://classroom.udacity.com/courses/ud827).
+# 
+# * Inferential Staitstics from [Udacity](https://classroom.udacity.com/courses/ud201).
+# 
+# * Tool to calculate pvalue from [GraphPad Software](https://www.graphpad.com/quickcalcs/).
+# 
+# * Scipy module to caluclate t-staitstics and pvalue from the 
+# [official document](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.ttest_rel.html).
